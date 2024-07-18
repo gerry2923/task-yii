@@ -114,10 +114,10 @@ class Tasks extends \yii\db\ActiveRecord
 
     /**
      * {@inheritdoc}
-     * @return UsersQuery the active query used by this AR class.
+     * @return TasksQuery the active query used by this AR class.
      */
     public static function find()
     {
-        return new UsersQuery(get_called_class());
+        return new TasksQuery(get_called_class());
     }
 }

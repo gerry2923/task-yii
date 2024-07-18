@@ -51,7 +51,7 @@ class UsersSpecialization extends \yii\db\ActiveRecord
     /**
      * Gets query for [[Specialization]].
      *
-     * @return \yii\db\ActiveQuery|UsersQuery
+     * @return \yii\db\ActiveQuery|SpecializationQuery
      */
     public function getSpecialization()
     {
@@ -70,10 +70,10 @@ class UsersSpecialization extends \yii\db\ActiveRecord
 
     /**
      * {@inheritdoc}
-     * @return UsersQuery the active query used by this AR class.
+     * @return UsersSpecializationQuery the active query used by this AR class.
      */
     public static function find()
     {
-        return new UsersQuery(get_called_class());
+        return new UsersSpecializationQuery(get_called_class());
     }
 }
